@@ -1,0 +1,108 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling with gradient background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+  color: #333;
+  min-height: 100vh;
+  padding: 30px;
+  transition: background 0.5s;
+}
+
+/* Dark mode theme */
+body.dark {
+  background: linear-gradient(135deg, #1e1e1e, #2c3e50);
+  color: #eee;
+}
+
+/* Glass effect container */
+.container.glass {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  backdrop-filter: blur(12px);
+  text-align: center;
+}
+
+/* RGB value display */
+#rgbValue {
+  font-size: 1.7rem;
+  margin: 20px 0;
+}
+
+/* Theme toggle */
+#themeToggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Options grid */
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* Color option buttons */
+.option {
+  width: 90px;
+  height: 90px;
+  border-radius: 15px;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: transform 0.3s, border 0.3s;
+}
+
+.option:hover {
+  transform: scale(1.08);
+  border: 3px solid #444;
+}
+
+/* Message and status */
+#message {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+#status {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Restart button */
+#restartBtn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #00b894;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#restartBtn:hover {
+  background-color: #019875;
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}

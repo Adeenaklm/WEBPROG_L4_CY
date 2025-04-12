@@ -1,0 +1,22 @@
+/* Body styling: Center the content and set margins */
+body {
+  margin: 100px auto; /* Centers the body content and gives top and bottom space */
+  width: max-content; /* Makes the body width as wide as its content */
+  font-family: sans-serif; /* Applies a clean, modern sans-serif font */
+  text-align: center; /* Centers the text inside the body */
+}
+
+/* Image card styling: Defines the layout of each image card */
+.image-card {
+  display: inline-block; /* Makes each image card align horizontally */
+  margin: 25px; /* Adds space around each image card */
+  width: 200px; /* Fixed width for each image card */
+  height: 240px; /* Fixed height for each image card */
+}
+
+/* Styling for images inside the image cards */
+.image-card img {
+  width: 200px; /* Ensures the image takes up the full width of the card */
+  height: 200px; /* Sets the image height to match the width */
+  object-fit: cover; /* Ensures the image covers the area of the card without distortion */
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta settings for character encoding and responsive layout -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Page title that shows in the browser tab -->
+  <title>Petrol Calculator</title>
+
+  <!-- Linking external CSS file for styling -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Main container to center and style the content -->
+  <div class="container">
+
+    <!-- Main heading -->
+    <h1>⛽ Calculate Your Petrol Expenses Instantly</h1>
+
+    <!-- Calculator form to take input values -->
+    <form id="calculatorForm" aria-label="Petrol Cost Calculator">
+      
+      <!-- Input for number of litres -->
+      <label for="litres">Litres:</label>
+      <input 
+        type="number" 
+        id="litres" 
+        step="0.01" 
+        min="0"
+        required 
+        placeholder="Enter litres e.g. 40" 
+        aria-describedby="litresHelp"
+      />
+
+      <!-- Input for price per litre -->
+      <label for="pricePerLitre">Price per litre (AED):</label>
+      <input 
+        type="number" 
+        id="pricePerLitre" 
+        step="0.01" 
+        min="0"
+        required 
+        placeholder="Enter price e.g. 3.20"
+        aria-describedby="priceHelp"
+      />
+
+      <!-- Button group for calculating and resetting -->
+      <div class="btn-group">
+        <!-- Submits the form to trigger calculation -->
+        <button type="submit">Calculate</button>
+
+        <!-- Resets the form and output -->
+        <button type="button" id="resetBtn">Reset</button>
+      </div>
+    </form>
+
+    <!-- Result box to display the calculated total cost -->
+    <div id="result" class="result-box">💸 Total cost will appear here</div>
+  </div>
+
+  <!-- Optional footer for extra credit or personalization -->
+  <footer style="text-align:center; margin-top: 20px; font-size: 0.85rem;">
+    Created with by Adeena • Bath Spa University
+  </footer>
+
+  <!-- Linking external JavaScript file for logic -->
+  <script src="script.js"></script>
+</body>
+</html>

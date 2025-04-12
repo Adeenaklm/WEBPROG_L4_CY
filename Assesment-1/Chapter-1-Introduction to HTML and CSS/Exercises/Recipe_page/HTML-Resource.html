@@ -4,100 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML & CSS Quick Reference Guide</title>
-    <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+    <link rel="stylesheet" href="html-css-guide.css"> <!-- External CSS file -->
+    <style>
+        /* Basic styling for body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        /* Container for content */
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Header styling */
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        /* List styling */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #e9ecef;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        /* Code block styling */
+        code {
+            background: #dee2e6;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>HTML & CSS Quick Reference Guide</h1>
-        <p>Learn about essential HTML tags and CSS properties</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>HTML & CSS Quick Reference Guide</h1>
+            <p>A concise guide to essential HTML tags and CSS properties.</p>
+        </header>
 
-    <section id="html-tags">
-        <h2>HTML Tags</h2>
-        <ul>
-            <li>
-                <strong>&lt;a&gt;</strong> - <code>&lt;a href="url"&gt;Link&lt;/a&gt;</code><br>
-                <p>Defines a hyperlink.</p>
-            </li>
-            <li>
-                <strong>&lt;div&gt;</strong> - <code>&lt;div&gt;Content&lt;/div&gt;</code><br>
-                <p>Defines a section or division.</p>
-            </li>
-            <li>
-                <strong>&lt;img&gt;</strong> - <code>&lt;img src="image.jpg" alt="Description"&gt;</code><br>
-                <p>Embeds an image.</p>
-            </li>
-            <li>
-                <strong>&lt;h1&gt;</strong> to <strong>&lt;h6&gt;</strong> - <code>&lt;h1&gt;Heading&lt;/h1&gt;</code><br>
-                <p>Defines headings from 1 (largest) to 6 (smallest).</p>
-            </li>
-            <li>
-                <strong>&lt;ul&gt;</strong> - <code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code><br>
-                <p>Defines an unordered list.</p>
-            </li>
-            <li>
-                <strong>&lt;ol&gt;</strong> - <code>&lt;ol&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ol&gt;</code><br>
-                <p>Defines an ordered list.</p>
-            </li>
-            <li>
-                <strong>&lt;p&gt;</strong> - <code>&lt;p&gt;Text&lt;/p&gt;</code><br>
-                <p>Defines a paragraph of text.</p>
-            </li>
-            <li>
-                <strong>&lt;form&gt;</strong> - <code>&lt;form&gt;&lt;input&gt;&lt;/form&gt;</code><br>
-                <p>Defines a form for user input.</p>
-            </li>
-            <li>
-                <strong>&lt;span&gt;</strong> - <code>&lt;span&gt;Text&lt;/span&gt;</code><br>
-                <p>Defines a section of inline text.</p>
-            </li>
-            <li>
-                <strong>&lt;table&gt;</strong> - <code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code><br>
-                <p>Defines a table structure.</p>
-            </li>
-        </ul>
-    </section>
+        <section id="html-tags">
+            <h2>HTML Tags</h2>
+            <ul>
+                <!-- Hyperlink tag -->
+                <li><strong>&lt;a&gt;</strong> - <code>&lt;a href="url" target="_blank"&gt;Link&lt;/a&gt;</code> <br>Defines a hyperlink with a new tab option.</li>
+               
+                <!-- Division tag -->
+                <li><strong>&lt;div&gt;</strong> - <code>&lt;div&gt;Content&lt;/div&gt;</code> <br>Defines a block container.</li>
+               
+                <!-- Image tag -->
+                <li><strong>&lt;img&gt;</strong> - <code>&lt;img src="image.jpg" alt="Description"&gt;</code> <br>Embeds an image.</li>
+                
+                <!-- Meta tag -->
+                <li><strong>&lt;meta&gt;</strong> - <code>&lt;meta charset="UTF-8"&gt;</code> <br>Defines metadata about the HTML document, such as character encoding.</li>
 
-    <section id="css-properties">
-        <h2>CSS Properties</h2>
-        <ul>
-            <li>
-                <strong>color</strong> - <code>color: red;</code><br>
-                <p>Sets the color of the text.</p>
-            </li>
-            <li>
-                <strong>background-color</strong> - <code>background-color: #fafafa;</code><br>
-                <p>Sets the background color of an element.</p>
-            </li>
-            <li>
-                <strong>font-size</strong> - <code>font-size: 18px;</code><br>
-                <p>Defines the font size of text.</p>
-            </li>
-            <li>
-                <strong>margin</strong> - <code>margin: 20px;</code><br>
-                <p>Sets the margin around an element.</p>
-            </li>
-            <li>
-                <strong>padding</strong> - <code>padding: 15px;</code><br>
-                <p>Sets padding inside an element.</p>
-            </li>
-            <li>
-                <strong>border</strong> - <code>border: 1px solid black;</code><br>
-                <p>Sets a border around an element.</p>
-            </li>
-            <li>
-                <strong>text-align</strong> - <code>text-align: center;</code><br>
-                <p>Aligns text within an element.</p>
-            </li>
-            <li>
-                <strong>display</strong> - <code>display: block;</code><br>
-                <p>Defines the display style of an element (e.g., block, inline).</p>
-            </li>
-        </ul>
-    </section>
+                <!-- Paragraph tag -->
+                <li><strong>&lt;p&gt;</strong> - <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code> <br>Defines a paragraph.</li>
+               
+                <!-- Heading tags -->
+                <li><strong>&lt;h1&gt;-&lt;h6&gt;</strong> - <code>&lt;h1&gt;Heading&lt;/h1&gt;</code> <br>Defines headings from largest to smallest.</li>
+               
+                <!-- List tags -->
+                <li><strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</strong> - <code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code> <br>Defines lists.</li>
 
-    <footer>
-        <p>Created by [Adeena]</p>
-    </footer>
+                <!-- Footer tag -->
+                <li><strong>&lt;footer&gt;</strong> - <code>&lt;footer&gt;Footer content&lt;/footer&gt;</code> <br>Defines a page footer.</li>
+
+                <!-- Link tag -->
+                <li><strong>&lt;link&gt;</strong> - <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code> <br>Links an external CSS file to an HTML document.</li>
+
+                <!-- Section tag -->
+                <li><strong>&lt;section&gt;</strong> - <code>&lt;section&gt;Section content&lt;/section&gt;</code> <br>Defines a section in a document.</li>
+
+            </ul>
+        </section>
+
+        <section id="css-properties">
+            <h2>CSS Properties</h2>
+            <ul>
+                <!-- Display property -->
+                <li><strong>display</strong> - <code>display: flex;</code> <br>Used for flexible layout structures.</li>
+                
+                <!-- Grid property -->
+                <li><strong>grid-template-columns</strong> - <code>grid-template-columns: 1fr 2fr;</code> <br>Defines a two-column grid layout.</li>
+                
+                <!-- Font styling -->
+                <li><strong>font-size</strong> - <code>font-size: 16px;</code> <br>Defines text size.</li>
+                <li><strong>font-weight</strong> - <code>font-weight: bold;</code> <br>Defines text thickness.</li>
+                <li><strong>text-align</strong> - <code>text-align: center;</code> <br>Aligns text.</li>
+                <li><strong>color</strong> - <code>color: red;</code> <br>Sets text color.</li>
+                
+                <!-- Background color -->
+                <li><strong>background-color</strong> - <code>background-color: blue;</code> <br>Sets background color.</li>
+               
+                <!-- Border property -->
+                <li><strong>border</strong> - <code>border: 1px solid black;</code> <br>Defines border.</li>
+                
+                <!-- Padding and margin -->
+                <li><strong>padding & margin</strong> - <code>padding: 10px; margin: 10px;</code> <br>Spacing around elements.</li>
+                
+                <!-- Positioning elements -->
+                <li><strong>position</strong> - <code>position: relative;</code> <br>Controls element positioning.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Created by Adeena</p>
+        </footer>
+    </div>
 </body>
 </html>

@@ -1,42 +1,42 @@
-/* style.css */
+/* General Page Styling */
 body {
-    font-family: 'Georgia', serif;
-    background-color: #cfc2c2;
+    font-family: 'Georgia', serif; /* Font style for the whole page */
+    background: linear-gradient(to right, #fbeee6, #d9a68b); /* Background gradient */
     margin: 0;
     padding: 0;
 }
 
-.description {
-    text-align: center;
-    font-size: 18px;
-    font-style: italic;
-    color: #5a4035;
-    margin-bottom: 20px;
-}
-
-.recipe_name {
+/* Container for the Recipe */
+.recipe-container {
     width: 700px;
-    background: hsl(19, 36%, 70%);
-    border: 2px solid #e3d5c8;
+    background: #fff;
     border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    margin: 40px auto;
-    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    padding: 25px;
     color: #4d3e3e;
 }
 
+/* Recipe Title Styling */
 h1.title {
-    text-align: center;
+    text-align: center; /* Center-align the title text */
     font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 34px;
     color: #8d5025;
-    margin-bottom: 15px;
-    border-bottom: 5px solid #e3d5c8;
-    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 4px solid #e3d5c8;
+    padding-bottom: 8px;
 }
 
+/* Logo Image Styling */
+h1.title .logo {
+    float: right; /* Align the logo to the right */
+    width: 70px; /* Set the size of the logo */
+    height: auto;
+    margin-left: 10px; /* Add some space between the logo and text */
+}
 
+/* Recipe Image Styling */
 .image {
     display: flex;
     justify-content: center;
@@ -45,48 +45,76 @@ h1.title {
 
 .image img {
     width: 100%;
-    max-width: 320px;
-    border-radius: 8px;
+    max-width: 340px;
+    border-radius: 10px;
     border: 3px solid #eb7209;
 }
 
+/* Recipe Details (Servings, Time, etc.) */
 .recipe-details {
     display: flex;
     justify-content: space-between;
-    margin: 10px 0;
     font-size: 14px;
     color: #824006;
+    background: #f4e3d7;
+    padding: 8px;
+    border-radius: 5px;
 }
 
+/* Section Title Styling */
 .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     color: #1a1817;
-    border-bottom: 3px dashed #e3d5c8;
-    margin-top: 20px;
+    border-bottom: 2px dashed #e3d5c8;
     padding-bottom: 5px;
+    margin-top: 20px;
 }
 
+/* List Styling for Ingredients and Procedure */
 ul, ol {
     margin-left: 20px;
+    padding-left: 25px; /* Add this line */
     line-height: 1.6;
     font-size: 16px;
     color: #080605;
 }
 
-ul li, ol li {
-    margin-bottom: 10px;
+
+/* Social Media Section Styling */
+.recipe-social {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background: #f0cbc2;
+    border-radius: 10px;
 }
 
-.footer {
+/* Highlight Text in Social Media Section */
+.recipe-social .highlight {
+    background: rgb(241, 212, 212);
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #4d3e3e;
+}
+
+/* Footer Styling */
+footer {
     text-align: center;
-    font-style: italic;
-    color: #0b0b14;
+    padding: 10px;
+    background: #f5f3f3;
     margin-top: 20px;
     font-size: 14px;
 }
 
-footer p {
-    margin: 0;
+/* Instagram Icon Styling */
+.insta-icon { 
+    font-size: 24px; /* Adjust the size */
+    color: rgb(83, 9, 9);
+    margin-right: 8px; /* Space between icon and text */
+    vertical-align: middle;
 }

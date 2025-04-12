@@ -1,0 +1,196 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set base font and background color for the page */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Ensure body takes full height of the viewport and centers content */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Main container styling */
+.container {
+  background: #3e62aa;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Heading style */
+h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #064b95;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin: 15px 0 5px;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* Input field styling */
+input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Hide pseudo-element */
+.container::before {
+  display: none;
+}
+
+/* Input focus state */
+input[type="number"]:focus {
+  border-color: #c2d3e5;
+  outline: none;
+}
+
+/* Button group wrapper for positioning buttons */
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* General button styling */
+button {
+  padding: 10px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Submit button style */
+button[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Reset button style */
+#resetBtn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Hover effects for buttons */
+button:hover {
+  opacity: 0.9;
+}
+
+/* Result display box styling */
+.result-box {
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transition: color 0.3s ease;
+}
+
+/* Container pseudo-element to add icon */
+.container::before {
+  content: '⛽';
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 48px;
+  opacity: 0.08;
+}
+
+/* Gradient background for the main container */
+.container {
+  background: linear-gradient(145deg, #3e62aa, #567dc2);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Enhanced heading style with text-shadow and animation */
+h1 {
+  margin-bottom: 25px;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  animation: fadeInDown 1s ease forwards;
+}
+
+/* Fade-in animation for the heading */
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Result box with additional styling */
+.result-box {
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #333;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+/* Bouncing animation for elements */
+.bounce {
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Footer opacity transition effect */
+footer {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+footer:hover {
+  opacity: 1;
+}

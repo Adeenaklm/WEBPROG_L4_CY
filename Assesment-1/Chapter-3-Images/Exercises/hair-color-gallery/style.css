@@ -1,0 +1,79 @@
+/* Body styling: General appearance and spacing */
+body {
+  font-family: 'Segoe UI', sans-serif; /* A modern and clean font for better readability */
+  background-color: #f9f9f9; /* Light, neutral background color that keeps the page feeling fresh */
+  color: #333; /* Darker text for better contrast and readability against the light background */
+  text-align: center; /* Centering the content for a more uniform and pleasing layout */
+  padding: 20px; /* Adding space around the body to avoid content feeling cramped */
+}
+
+/* Main header styling */
+h1 {
+  color: #5e3b8b; /* A rich purple color for the heading that grabs attention */
+  margin-bottom: 30px; /* Spacing below the heading to give it some breathing room */
+  font-size: 2.5em; /* Larger font size for the header to make it stand out */
+  text-transform: uppercase; /* Transforming text to uppercase for a more bold, assertive appearance */
+  letter-spacing: 2px; /* Adding spacing between letters to improve readability and style */
+}
+
+/* Image gallery container styling */
+.image-gallery {
+  display: flex; /* Flexbox for easy alignment and responsive design */
+  flex-wrap: wrap; /* Allowing items to wrap onto new lines as needed */
+  gap: 20px; /* Space between image cards to prevent them from looking too cramped */
+  justify-content: center; /* Centering the items in the gallery */
+  margin-top: 20px; /* Space above the gallery to separate it from other content */
+}
+
+/* Styling for each individual image card */
+.image-card {
+  background: white; /* Clean white background to contrast with the images */
+  padding: 15px; /* Padding around the image for better spacing */
+  border-radius: 10px; /* Rounded corners to soften the card's look */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Adding a subtle shadow for depth and a polished look */
+  width: 250px; /* Fixed width for uniformity in card sizes */
+  transition: transform 0.3s ease; /* Smooth transition when the card is hovered over */
+}
+
+/* Hover effect for image cards */
+.image-card:hover {
+  transform: translateY(-10px); /* Giving a subtle lift to the card when hovered */
+}
+
+/* Image styling */
+img {
+  width: 100%; /* Ensuring the image takes up the full width of the card */
+  height: auto; /* Maintaining the image's aspect ratio */
+  border-radius: 8px; /* Softening the edges of the image with rounded corners */
+  filter: contrast(110%) brightness(1.1) saturate(1.2); /* Making the image more vibrant and vivid */
+  transition: filter 0.3s ease; /* Smooth transition effect for the image's filter changes */
+}
+
+/* Hover effect for images */
+img:hover {
+  filter: grayscale(20%) sepia(10%); /* Adding a slight grayscale and sepia effect when hovered */
+}
+
+/* License text styling */
+.license {
+  font-size: 0.9em; /* Slightly smaller font for the license information */
+  margin-top: 10px; /* Space above the license text to keep it separate from the image */
+  color: #666; /* Lighter color for the license text, keeping it subtle */
+}
+
+/* Mobile responsiveness: Adjusting layout for smaller screens */
+@media (max-width: 768px) {
+  .image-gallery {
+    flex-direction: column; /* Stacking the image cards vertically for better mobile view */
+    align-items: center; /* Centering the image cards for a cleaner layout on mobile */
+  }
+
+  h1 {
+    font-size: 2em; /* Smaller font size for the heading on smaller screens */
+  }
+
+  .image-card {
+    width: 80%; /* Reducing the width of the image cards on mobile for a better fit */
+    margin-bottom: 20px; /* Adding space between the stacked image cards */
+  }
+}

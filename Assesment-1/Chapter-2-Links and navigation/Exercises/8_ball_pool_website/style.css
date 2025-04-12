@@ -1,51 +1,64 @@
+/* The body section of the page */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Sets the font to Arial for a clean, modern look */
+    background-color: #f4f4f4; /* Light grey background color for the entire page */
+    color: #333; /* Dark grey text color for readability */
+    margin: 0; /* Removes any default margins from the body */
+    padding: 0; /* Removes any default padding from the body */
 }
 
+/* The header section at the top of the page */
 header {
-    background: #091090;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background: #091090; /* Dark blue background color for the header */
+    color: white; /* White text color for contrast against the dark background */
+    padding: 20px; /* Adds padding inside the header for spacing */
+    text-align: center; /* Centers the text inside the header */
 }
 
+/* The navigation menu */
 nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+    list-style: none; /* Removes the default list bullets */
+    padding: 0; /* Removes default padding from the unordered list */
+    text-align: center; /* Centers the navigation links */
 }
 
+/* Style for each list item in the navigation menu */
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline; /* Makes the list items display inline (horizontally) */
+    margin: 0 15px; /* Adds margin between the list items */
 }   
 
+/* Style for the links inside the navigation menu */
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: white; /* Sets the link color to white */
+    text-decoration: none; /* Removes the default underline from links */
 }
 
+/* General section styling for all sections in the content */
 section {
-    padding: 20px;
-    margin: 20px;
-    background: white;
-    border-radius: 5px;
+    padding: 20px; /* Adds padding inside the sections for spacing */
+    margin: 20px; /* Adds margin around the sections to separate them */
+    background: white; /* White background for the sections */
+    border-radius: 5px; /* Rounds the corners of the sections */
 }
 
+/* Styling for buttons */
 .button {
-    display: inline-block;
-    background: #28a745;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
+    display: inline-block; /* Makes the button behave like an inline element but maintain block properties */
+    background: #28a745; /* Green background color for the button */
+    color: white; /* White text color for the button */
+    padding: 10px 15px; /* Adds padding inside the button for better clickability */
+    text-decoration: none; /* Removes any underline from the link (button) */
+    border-radius: 5px; /* Rounds the corners of the button */
 }
 
+/* Hover effect for the button */
 .button:hover {
-    background: #218838;
+    background: #218838; /* Darkens the button color when hovered over */
 }
 
+/* Active link style for highlighting the current page */
+.active {
+    font-weight: bold; /* Makes the active link bold */
+    text-decoration: underline; /* Underlines the active link for better visibility */
+}

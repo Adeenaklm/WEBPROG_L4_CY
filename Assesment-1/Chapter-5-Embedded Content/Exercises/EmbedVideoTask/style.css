@@ -1,0 +1,68 @@
+/* General body styling */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e1f1ee, #f4f9f8);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Video container styling */
+.video-container {
+  text-align: center;
+}
+
+/* Video styling with responsiveness */
+video {
+  max-width: 90%;
+  max-height: 70vh;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #045d56;
+  margin-bottom: 0.3em;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.sub-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1em;
+}
+
+
+video:hover {
+  transform: scale(1.02);
+}
+
+/* Play/Pause button styling */
+#toggleBtn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #045d56;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#toggleBtn:hover {
+  background-color: #033f3a;
+}
+
+/* Caption text styling */
+.caption {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}

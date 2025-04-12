@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bath Spa University Video</title>  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="video-container">
+    <!-- Headings moved inside the body -->
+    <h1 class="main-title">🎓 Experience Bath Spa University</h1>
+    <p class="sub-title">A glimpse into creativity, campus life, and innovation.</p>
+
+    <!-- Video element with controls, caption file linked -->
+    <video id="bsuVideo" controls loop autoplay muted poster="bathspa-poster.jpg">
+      <source src="bathspa-university-video.mp4" type="video/mp4">
+      <track src="captions.vtt" kind="captions" srclang="en" label="English">
+      Your browser does not support the video tag.
+    </video>
+
+    <button id="toggleBtn">Pause</button>
+    <p class="caption">Welcome to Bath Spa University</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
