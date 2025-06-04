@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📨 Contact Us - GameNova</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rubik&display=swap" rel="stylesheet" />
+  <script src="../script.js" defer></script>
+</head>
+<body class="dark glass">
+
+  <!-- 🌐 Navbar -->
+  <header class="navbar glass">
+    <div class="logo">
+      <img src="../images/gamenova.logo.png" alt="GameNova Logo" />
+      GameNova
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 💬 Hero -->
+  <section class="hero about-hero">
+    <div class="hero-content">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you — let’s connect!</p>
+    </div>
+  </section>
+
+  <!-- 📨 Contact Section -->
+  <section class="contact-container">
+    <div class="contact-content animate-slide">
+
+      <!-- 📌 Info Block -->
+      <div class="contact-info glassy">
+        <h2>Contact Information</h2>
+        <p>Have questions, feedback, or business inquiries? Reach out via the form or the details below:</p>
+        <ul>
+          <li><span>📍</span> 123 Gaming Street, Digital City, CA 94016</li>
+          <li><span>📞</span> +1 (555) 123-4567</li>
+          <li><span>✉️</span> info@gamenova.com</li>
+          <li><span>⏰</span> Mon–Fri: 9AM–6PM (PST)</li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"><span>🌐</span> Facebook</a>
+          <a href="#"><span>🐦</span> Twitter</a>
+          <a href="#"><span>🎥</span> YouTube</a>
+          <a href="#"><span>📸</span> Instagram</a>
+        </div>
+      </div>
+
+      <!-- ✅ Toast -->
+      <div id="toast" class="toast">Message sent successfully! ✅</div>
+
+      <!-- 📝 Form -->
+      <div class="contact-form glassy">
+        <h2>Get In Touch</h2>
+        <form id="contactForm">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+          <button type="submit" class="btn-glass">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🧊 Footer -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 GameNova. All rights reserved. Created with ❤️ by the GameNova Team.</p>
+  </div>
+
+</body>
+</html>
